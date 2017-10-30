@@ -1,6 +1,6 @@
 <?php
 namespace Kros\Model;
-require_once "Model.php";
+
 class MySqlModel extends AbstractModel{
 	
    /**
