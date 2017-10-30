@@ -1,7 +1,7 @@
 {
-   "name": "kros/properties-mgr",
+   "name": "kros/mysqlmodel",
    "description" : "Load properties from a property / init file as properties in an object.",
-	"homepage" : "https://github.com/kros/PropertiesMGR",
+	"homepage" : "https://github.com/kros/MysqlModel",
 	"license" : "GNU Version 2",
 	"authors" : [{
 			"name" : "Oscar Ruiz",
@@ -11,7 +11,7 @@
 		}
 	],
 	"autoload": {
-	   "psr-4": {"Kros\\PropertiesMGR\\": "src/"}
+	   "psr-4": {"Kros\\Model\\": "src/"}
 	},
 	"keywords" : [
 		"properties",
