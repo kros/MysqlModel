@@ -17,5 +17,8 @@
 		"properties",
 		"resources",
 		"settings"
-	]   
+	],
+	"require":{
+		"kros/model":"0.2"
+	}
 }
