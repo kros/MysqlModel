@@ -30,19 +30,19 @@ class MySqlModel extends AbstractModel{
    
    function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = ""){
       if (is_string($theValue)){
-         $theValue = (!get_magic_quotes_gpc()) ? addslashes($theValue) : $theValue;
+         $theValue = addslashes($theValue);
       }
 
       switch ($theType) {
          case "text":
-            $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+            $theValue = ($theValue!=null && $theValue != "") ? "'" . $theValue . "'" : "NULL";
             break;    
          case "long":
          case "int":
-            $theValue = ($theValue != "" || is_int($theValue)) ? intval($theValue) : "NULL";
+            $theValue = ($theValue!=null && ($theValue != "" || is_int($theValue))) ? intval($theValue) : "NULL";
             break;
          case "double":
-            $theValue = ($theValue != "") ? "'" . doubleval($theValue) . "'" : "NULL";
+            $theValue = ($theValue!=null && $theValue != "") ? "'" . doubleval($theValue) . "'" : "NULL";
             break;
          case "date":
          case "time":
