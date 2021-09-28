@@ -19,6 +19,6 @@
 		"settings"
 	],
 	"require":{
-		"kros/model":"^0.8"
+		"kros/model":"^0.9"
 	}
 }
