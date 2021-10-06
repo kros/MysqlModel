@@ -124,6 +124,10 @@ class MySqlModel extends AbstractModel{
 		return $theValue;
 	   
    }
+   function hasSavepoint(){
+      return true;
+   }
+	
 }
 
 ?>
